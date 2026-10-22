@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Brygada1918-Medium;
+  src: url(/assets/Brygada1918-Medium-BNT2j4GD.ttf) format("truetype");
+}
+@font-face {
+  font-family: Brygada1918-Regular;
+  src: url(/assets/Brygada1918-Regular-C_CrhRUb.ttf) format("truetype");
+}
+@font-face {
+  font-family: Brygada1918-SemiBold;
+  src: url(/assets/Brygada1918-SemiBold-De8L-tZX.ttf) format("truetype");
+}
+@font-face {
+  font-family: Afacad-Regula;
+  src: url(/assets/Afacad-Regular-BFdlCzIZ.ttf) format("truetype");
+}
+@font-face {
+  font-family: SchibstedGrotesk-Regular;
+  src: url(/assets/SchibstedGrotesk-Regular-A3mAv4h-.ttf) format("truetype");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Brygada1918-Medium !important;
+}
+button {
+  font-family: Brygada1918-Regular !important;
+}
+p {
+  font-family: Brygada1918-Regular;
+}
+.style-content {
+  font-family: Afacad-Regula;
+}
+.style-content-2 {
+  font-family: SchibstedGrotesk-Regular;
+}
+.style-content-3 {
+  font-family: Brygada1918-SemiBold !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f4f2;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #d4af37, #f6e27a, #c9a227);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #c9a227, gold, #b8961e);
+}
+
+@keyframes logo-marquee-rtl {
+  0% {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-50%);
+  }
+}
+.animate-logo-marquee-rtl {
+  animation: logo-marquee-rtl 28s linear infinite;
+}
+.logo-marquee:hover .animate-logo-marquee-rtl {
+  animation-play-state: paused;
+}
+
+@keyframes newsection-slider-rtl {
+  0% {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-50%);
+  }
+}
+@keyframes newsection-slider-ltr {
+  0% {
+    transform: translate(-50%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+.animate-newsection-slider-rtl {
+  animation: newsection-slider-rtl 28s linear infinite;
+}
+.animate-newsection-slider-ltr {
+  animation: newsection-slider-ltr 28s linear infinite;
+}
+.newsection-slider:hover .animate-newsection-slider-rtl,
+.newsection-slider:hover .animate-newsection-slider-ltr {
+  animation-play-state: paused;
+}
